@@ -1,0 +1,88 @@
+3.3.1
+Added FAQ to vBulletin 3.5 install xml.
+Fixed parents not showing in pet profile.
+------------------
+Upload and run the product through the product manager.
+------------------
+Files Changed: (0)
+Templates Changed: (1)
+petz_profile
+--------------------------------------------------------------
+3.3.0
+Added support for new vBulletin 3.6.0 product manager.
+Added Leave Battle Arena before battle starts.
+Split Egg Hatching and Arena expiry settings.
+Added new active-x workaround for IE users.
+Added new thread on creation of battle arenas.
+------------------
+Upload and run the product through the product manager.
+------------------
+Files Changed: (4)
+petz/core/battle.php
+petz/core/cron.php
+petz/core/arena.php
+petz/language.php (added 3 phrases)
+Templates Edit Changed: (1)
+headinclude
+
+--------------------------------------------------------------
+
+3.2.4B (auction.php)
+Fixed can't create auction with no reserve and no instant buy.
+
+--------------------------------------------------------------
+
+3.2.4 (egg.php, guildwar.php, battle.php)
+Fixed egg parents.
+Fixed guildwar errors.
+
+--------------------------------------------------------------
+
+3.2.3 (gamble.php [petz_profile])
+Bug Fixes
+
+--------------------------------------------------------------
+
+3.2.2 (egg.php)
+Fixed Egg Hatch date
+Bug Fixes
+
+--------------------------------------------------------------
+
+3.2.1 (egg.php, auction.php, cron.php)
+Changed Egg System to be less aggressive.
+Bug Fixes
+
+--------------------------------------------------------------
+
+3.2.0
+New features added:
+Auction, Message Center, More Functionality and Admin Controls
+Bug Fixes
+
+--------------------------------------------------------------
+
+3.1.5
+Bug Fixes
+
+--------------------------------------------------------------
+
+3.1.0
+Initial Full Release
+
+--------------------------------------------------------------
+
+3.0.2
+Lite Release (compatability fix)
+
+--------------------------------------------------------------
+
+3.0.1
+Initial Lite Release
+
+--------------------------------------------------------------
+
+3.0.0
+Initial Unreleased Release
+
+--------------------------------------------------------------

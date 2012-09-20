@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <product productid="petz" active="1">
-	<title>Ð¢Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐºÐ¸ (Petz)</title>
-	<description>Ð’Ð¸Ñ€Ñ‚ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ð¹ Ð·Ð²ÐµÑ€Ð¸Ð½ÐµÑ† (ÐŸÐµÑ€ÐµÐ²Ð¾Ð´ Ð¾ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð¸Ð»: alex Roosso)</description>
+	<title>Òàìàãî÷êè (Petz)</title>
+	<description>Âèðòóàëüíûé çâåðèíåö (Ïåðåâîä îñóùåñòâèë: alex Roosso)</description>
 	<version>3.3.1</version>
 	<url />
 	<versioncheckurl />
@@ -3496,9 +3496,9 @@ $globaltemplates[] = 'petz_item';
 		<plugin active="1" executionorder="5">
 			<title>petz_memberinfo_display</title>
 			<hookname>member_complete</hookname>
-			<phpcode><![CDATA[$vbphrase['petz_steal']='Ð£ÐºÑ€Ð°ÑÑ‚ÑŒ';
-$vbphrase['petz_steal_confirm']="ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ ok ÐµÑÐ»Ð¸ Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐºÑ€Ð°ÑÑ‚ÑŒ ÑÑ‚Ð¾Ñ‚ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚.\nÐ•ÑÐ»Ð¸ Ð’Ñ‹ Ð¿Ð¾Ñ‚ÐµÑ€Ð¿Ð¸Ñ‚Ðµ Ð½ÐµÑƒÐ´Ð°Ñ‡Ñƒ, Ñ‚Ð¾ Ð±ÑƒÐ´ÐµÑ‚Ðµ Ð¾ÑˆÑ‚Ñ€Ð°Ñ„Ð¾Ð²Ð°Ð½Ñ‹ Ð½Ð° ".$vbulletin->options['petz_stealitemfine']."% Ð¸ Ð¿Ð¾Ñ‚ÐµÑ€ÑÑ‚Ðµ  ".$vbulletin->options['petz_stealrepfine']." Ð¾Ñ‡ÐºÐ¾Ð² Ñ€ÐµÐ¿ÑƒÑ‚Ð°Ñ†Ð¸Ð¸.";
-$vbphrase['petz_no_items_to_display']='Ð£ Ð¸Ð³Ñ€Ð¾ÐºÐ° Ð½ÐµÑ‚ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð¾Ð²';
+			<phpcode><![CDATA[$vbphrase['petz_steal']='Óêðàñòü';
+$vbphrase['petz_steal_confirm']="Íàæìèòå ok åñëè Âû õîòèòå óêðàñòü ýòîò ïðåäìåò.\nÅñëè Âû ïîòåðïèòå íåóäà÷ó, òî áóäåòå îøòðàôîâàíû íà ".$vbulletin->options['petz_stealitemfine']."% è ïîòåðÿòå  ".$vbulletin->options['petz_stealrepfine']." î÷êîâ ðåïóòàöèè.";
+$vbphrase['petz_no_items_to_display']='Ó èãðîêà íåò ïðåäìåòîâ';
 include("petz/plugins/memberinfo.php");]]></phpcode>
 		</plugin>
 		<plugin active="1" executionorder="5">
@@ -3514,8 +3514,8 @@ include("petz/plugins/memberinfo.php");]]></phpcode>
 			<hookname>online_location_unknown</hookname>
 			<phpcode><![CDATA[if($userinfo['activity']=='petz')
 {
-    $userinfo['where'] = '<a href="petz.php?'.$vbulletin->session->vars[sessionurl].'">ÐŸÐ¸Ñ‚Ð¾Ð¼Ñ†Ñ‹</a>'; 
-    $userinfo['action'] = "ÐŸÐ¸Ñ‚Ð¾Ð¼Ñ†Ñ‹";
+    $userinfo['where'] = '<a href="petz.php?'.$vbulletin->session->vars[sessionurl].'">Ïèòîìöû</a>'; 
+    $userinfo['action'] = "Ïèòîìöû";
     $handled = true;
 }]]></phpcode>
 		</plugin>
@@ -3536,15 +3536,15 @@ include("petz/plugins/memberinfo.php");]]></phpcode>
 		</plugin>
 	</plugins>
 	<phrases>
-		<phrasetype name="Ð—Ð°Ð¿Ð»Ð°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸" fieldname="cron">
-			<phrase name="task_cron15_desc" date="1154643576" username="alex Roosso" version="3.3.1"><![CDATA[ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ñ Ð¿Ð¾ ÐŸÐ¸Ñ‚Ð¾Ð¼Ñ†Ð°Ð¼]]></phrase>
+		<phrasetype name="Çàïëàíèðîâàííûå çàäà÷è" fieldname="cron">
+			<phrase name="task_cron15_desc" date="1154643576" username="alex Roosso" version="3.3.1"><![CDATA[Àâòîìàòè÷åñêèå çàäàíèÿ ïî Ïèòîìöàì]]></phrase>
 			<phrase name="task_cron15_log" date="1154643576" username="alex Roosso" version="3.3.1" />
-			<phrase name="task_cron15_title" date="1154643576" username="alex Roosso" version="3.3.1"><![CDATA[ÐžÐ±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ²]]></phrase>
+			<phrase name="task_cron15_title" date="1154643576" username="alex Roosso" version="3.3.1"><![CDATA[Îáñëóæèâàíèå ïèòîìöåâ]]></phrase>
 		</phrasetype>
-		<phrasetype name="Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð¾Ð± Ð¾ÑˆÐ¸Ð±ÐºÐ°Ñ…" fieldname="error">
-			<phrase name="petz_acp_redirect" date="0" username="" version=""><![CDATA[ÐŸÐµÑ€ÐµÐ°Ð´Ñ€ÐµÑÐ°Ñ†Ð¸Ñ...]]></phrase>
+		<phrasetype name="Ñîîáùåíèÿ îá îøèáêàõ" fieldname="error">
+			<phrase name="petz_acp_redirect" date="0" username="" version=""><![CDATA[Ïåðåàäðåñàöèÿ...]]></phrase>
 		</phrasetype>
-		<phrasetype name="Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ°. Ð¢ÐµÐºÑÑ‚" fieldname="faqtext">
+		<phrasetype name="Ñïðàâêà. Òåêñò" fieldname="faqtext">
 			<phrase name="faq_p3tz_auction" date="1156970278" username="tehste" version="3.3.0"><![CDATA[<b><u>Auction</b></u><br><br>
 So you have an item or a pet you think others will want and you're in need of some spare credits? Just auction it!<br>
  <br>
@@ -3713,15 +3713,15 @@ What do you do if your p3t is dead?  Well here you have 3 options:<br />
 1. Who cares - Leave it alone and make a new one now, it wasn't a good p3t anyway.  Losers are meant to die right?<br />
 2. Memorial - For a fee you can get a gravestone for your deceased p3t.  You will get a gravestone that has the life time of your p3t (born-died) and can also write a few words to put on the gravestone if you want.<br />
 3. Resurrection - For a large fee (1500 points) you can bring your p3t back to life.  The pet will be resurrected with the same stats it had when it died and no hunger and full health.]]></phrase>
-			<phrase name="p3tz_faq_moral" date="1156970114" username="tehste" version="3.3.0"><![CDATA[<b><u>Ð¥Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€</b></u><br><br>
-Saw those pets with Devil horns and halos? And also those regular ones? Wondering how theyâ€™re different from each other? Thatâ€™s explained throughâ€¦<br />
+			<phrase name="p3tz_faq_moral" date="1156970114" username="tehste" version="3.3.0"><![CDATA[<b><u>Õàðàêòåð</b></u><br><br>
+Saw those pets with Devil horns and halos? And also those regular ones? Wondering how they’re different from each other? That’s explained through…<br />
 <br />
 <br />
-<i><b>Ðž Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ðµ Ð¥Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€</b></i><br />
+<i><b>Î ïàðàìåòðå Õàðàêòåð</b></i><br />
 <br />
-Located right next to your petâ€™s hunger bar is the Moral. This varies from -100% to 100%. Evil pets are those with negative moral, neutral with their moral in the middle, and good when they get positive levels.<br />
+Located right next to your pet’s hunger bar is the Moral. This varies from -100% to 100%. Evil pets are those with negative moral, neutral with their moral in the middle, and good when they get positive levels.<br />
 <br />
-Moral influences not only the appearance of pets, but itâ€™s also important in battle. Good pets can use good spells, evil pets, evil spells, and neutral pets, neutral spells. Water and Ice are considered positive elements, Earth is neutral, Fire and Energy are negative. During battle, youâ€™ll only be able to use the spells that are according to your petâ€™s moral.<br />
+Moral influences not only the appearance of pets, but it’s also important in battle. Good pets can use good spells, evil pets, evil spells, and neutral pets, neutral spells. Water and Ice are considered positive elements, Earth is neutral, Fire and Energy are negative. During battle, you’ll only be able to use the spells that are according to your pet’s moral.<br />
 <br />
 <br />
 So be sure not to buy the wrong spells at the magic shop next time!]]></phrase>
@@ -3729,19 +3729,19 @@ So be sure not to buy the wrong spells at the magic shop next time!]]></phrase>
 <br />
 <b>1st Way) Registering:</b> Just use the Register Now button at the middle of the Index, fill in the boxes and win 500 points! Remember this can only be done once.<br />
 <br />
-<b>2nd Way) Posting:</b> Yes, posting will get you points depending on their lenght. So share your ideas, introduce yourself, chit chat with other members. But remember, spamming is not allowed and surely wonâ€™t make you any friends.<br />
+<b>2nd Way) Posting:</b> Yes, posting will get you points depending on their lenght. So share your ideas, introduce yourself, chit chat with other members. But remember, spamming is not allowed and surely won’t make you any friends.<br />
 <br />
-<b>3rd Way) Waiting:</b> Every 24hrs (counting starts at the time you registered), youâ€™ll receive 100 points!<br />
+<b>3rd Way) Waiting:</b> Every 24hrs (counting starts at the time you registered), you’ll receive 100 points!<br />
 <br />
 <b>4th Way) Referring:</b> Tell your friends about P3tz and convince them to join. If they say at their registration who told them about the website you get 250 points.<br />
 <br />
 <b>5th Way) Betting:</b> You can bet through the Cassino. To see more about betting check out the Betting Guide.<br />
 <br />
-<b>6th Way) Reputation:</b> If people give you reputation, youâ€™ll also get some points.<br />
+<b>6th Way) Reputation:</b> If people give you reputation, you’ll also get some points.<br />
 <br />
 <b>7th Way) Joining events and helping the staff:</b> If you participate in forum events or help the staff (like writing these guides), they may be willing to award you with some points.<br />
 <br />
-<b>8th Way) Auctioning items/Pets:</b> You can auction items/pets that belong to you to other playes. Youâ€™ll get 85% of the final bet.<br />
+<b>8th Way) Auctioning items/Pets:</b> You can auction items/pets that belong to you to other playes. You’ll get 85% of the final bet.<br />
 <br />
 <b>9th Way) Putting a Pet to Adoption:</b> On the Pet Shop, select Sell. Choose the pet and the price. You'll get 90% of that value if the Pet is sold.<br />
 <br />
@@ -3793,7 +3793,7 @@ And that's it. Now you're ready to go around trying to steal other's stuff and m
  <br />
 Obviously the diversity of p3tz is growing all the time - use this knowledge and apply it to the new p3tz to find a p3t most suited to you!]]></phrase>
 			<phrase name="petz_faq" date="1156969952" username="tehste" version="3.3.0" />
-			<phrase name="petz_faq_battlesetc" date="1192922520" username="alex Roosso" version="3.3.1"><![CDATA[Ð—Ð´ÐµÑÑŒ Ð¼Ð¾Ð¶Ð½Ð¾ ÑƒÐ·Ð½Ð°Ñ‚ÑŒ Ð¾ Ñ‚Ð¾Ð¼, ÐºÐ°Ðº Ð¸Ð³Ñ€Ð°Ñ‚ÑŒ, ÐºÐ°Ðº Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð’Ð°ÑˆÐµÐ³Ð¾ ÐŸÐ¸Ñ‚Ð¾Ð¼Ñ†Ð°. Ð Ñ‚Ð°Ðº Ð¶Ðµ Ð¾ Ñ‚Ð¾Ð¼, ÐºÐ°Ðº Ð¾Ð½ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°Ñ‚ÑŒ ÑƒÑ‡Ð°ÑÑ‚Ð¸Ðµ Ð² Ð±Ð¾ÑÑ….]]></phrase>
+			<phrase name="petz_faq_battlesetc" date="1192922520" username="alex Roosso" version="3.3.1"><![CDATA[Çäåñü ìîæíî óçíàòü î òîì, êàê èãðàòü, êàê òðåíèðîâàòü Âàøåãî Ïèòîìöà. À òàê æå î òîì, êàê îí ìîæåò ïðèíèìàòü ó÷àñòèå â áîÿõ.]]></phrase>
 			<phrase name="petz_faq_createegg" date="1192922579" username="alex Roosso" version="3.3.1"><![CDATA[Locate the Vet. It is a link in the P3tz main menu and also on the P3tz navbar which is displayed on all P3tz pages.
 <br /><br />
 Once you are at the Vet find the 'Create a P3tz Egg' category which is under the 'Vet Items' category. Simply click the 'Click here to create a new egg' link.
@@ -3841,19 +3841,19 @@ P3tz are displayed next to your  name on messages you post in the forum. They ar
 Clicking the image of a P3t will take you to the pet profile. This is where you can use an item, view the P3tz statistics, and spells the P3t has learnt.
 <br /><br />
 If a P3t dies it can be resurrected by clicking the resurrect link in the P3tz Profile of the pet. You can also create a grave as a memorial for your P3t in the graveyard.]]></phrase>
-			<phrase name="petz_faq_started" date="1192922709" username="alex Roosso" version="3.3.1"><![CDATA[Ð—Ð´ÐµÑÑŒ Ñ€Ð°ÑÑÐºÐ°Ð·Ð°Ð½Ð¾ Ð¾Ð± Ð¾ÑÐ½Ð¾Ð²Ð°Ñ… ÐŸÐ¸Ñ‚Ð¾Ð¼Ð½Ð¸ÐºÐ° Ð¸ ÐµÐ³Ð¾ Ð¾Ð±Ð¸Ñ‚Ð°Ñ‚ÐµÐ»ÐµÐ¹.]]></phrase>
+			<phrase name="petz_faq_started" date="1192922709" username="alex Roosso" version="3.3.1"><![CDATA[Çäåñü ðàññêàçàíî îá îñíîâàõ Ïèòîìíèêà è åãî îáèòàòåëåé.]]></phrase>
 			<phrase name="petz_faq_stats" date="1156969994" username="alex Roosso" version="3.3.1"><![CDATA[Ok so you may notice P3tz have a few different statistics. They are explained below.
 <br /><br />
-<b>Ð—Ð´Ð¾Ñ€Ð¾Ð²ÑŒÐµ</b><br />
+<b>Çäîðîâüå</b><br />
 The health displays the current health compared to the maximum health the P3t can have. You should keep this value above 0 otherwise your P3t will die.
 <br />
-<b>Ð“Ð¾Ð»Ð¾Ð´</b><br />
+<b>Ãîëîä</b><br />
 The hunger is how hungry the P3t is. This is displayed as a percentage so you should keep it low. If your P3tz hunger is too high your P3t will start to lose health.
 <br />
-<b>Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚</b><br />
+<b>Âîçðàñò</b><br />
 The age displays how old the P3t is in days.
 <br />
-<b>Ð¥Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€</b><br />
+<b>Õàðàêòåð</b><br />
 The moral of a P3t determins how good or evil the P3t is. P3tz moral can vary between -100 and +100. Staying around the middle will keep the moral neutral. Moral effects which spells can be used in battle. All spells can be learnt but only spells that match the Moral of the P3t can be used.
 <br />
 <b>Strength</b><br />
@@ -3882,142 +3882,142 @@ P3tz can be sold via the Pet Shop. While a pet is advertised in the Pet Shop it 
 <br /><br />
 When you sell a pet you can enter a brief description of the pet. This is displayed in the Pet Shop so it is worth writing an inviting description. You will also select the asking price. Note that you will have to pay tax on the price of the pet so remember that.]]></phrase>
 		</phrasetype>
-		<phrasetype name="Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ°. Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ¸" fieldname="faqtitle">
-			<phrase name="faq_p3tz_auction" date="1156970278" username="tehste" version="3.3.0"><![CDATA[ÐÑƒÐºÑ†Ð¸Ð¾Ð½]]></phrase>
-			<phrase name="faq_p3tz_items" date="1156970134" username="tehste" version="3.3.0"><![CDATA[ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚Ñ‹]]></phrase>
-			<phrase name="faq_p3tz_kennels" date="1156970257" username="tehste" version="3.3.0"><![CDATA[Ð”Ð¾Ð¼Ð¸ÐºÐ¸]]></phrase>
-			<phrase name="new_faq_item" date="1156970269" username="tehste" version="3.3.0"><![CDATA[Ð—Ð°ÐºÐ»Ð¸Ð½Ð°Ð½Ð¸Ñ]]></phrase>
+		<phrasetype name="Ñïðàâêà. Çàãîëîâêè" fieldname="faqtitle">
+			<phrase name="faq_p3tz_auction" date="1156970278" username="tehste" version="3.3.0"><![CDATA[Àóêöèîí]]></phrase>
+			<phrase name="faq_p3tz_items" date="1156970134" username="tehste" version="3.3.0"><![CDATA[Ïðåäìåòû]]></phrase>
+			<phrase name="faq_p3tz_kennels" date="1156970257" username="tehste" version="3.3.0"><![CDATA[Äîìèêè]]></phrase>
+			<phrase name="new_faq_item" date="1156970269" username="tehste" version="3.3.0"><![CDATA[Çàêëèíàíèÿ]]></phrase>
 			<phrase name="p3tz_faq_battle1" date="1156970178" username="tehste" version="3.3.0"><![CDATA[Battling, Part 1]]></phrase>
 			<phrase name="p3tz_faq_battle2" date="1156970190" username="tehste" version="3.3.0"><![CDATA[Battling, Part 2]]></phrase>
-			<phrase name="p3tz_faq_casino" date="1156970207" username="tehste" version="3.3.0"><![CDATA[Ð¡Ñ‚Ð°Ð²ÐºÐ¸, Ð¿Ð°Ñ€Ð¸]]></phrase>
+			<phrase name="p3tz_faq_casino" date="1156970207" username="tehste" version="3.3.0"><![CDATA[Ñòàâêè, ïàðè]]></phrase>
 			<phrase name="p3tz_faq_death" date="1156970298" username="tehste" version="3.3.0"><![CDATA[P3tz Death]]></phrase>
-			<phrase name="p3tz_faq_moral" date="1156970114" username="tehste" version="3.3.0"><![CDATA[ÐœÐ¾Ñ€Ð°Ð»ÑŒ]]></phrase>
-			<phrase name="p3tz_faq_points" date="1156970041" username="tehste" version="3.3.0"><![CDATA[ÐžÑ‡ÐºÐ¸]]></phrase>
+			<phrase name="p3tz_faq_moral" date="1156970114" username="tehste" version="3.3.0"><![CDATA[Ìîðàëü]]></phrase>
+			<phrase name="p3tz_faq_points" date="1156970041" username="tehste" version="3.3.0"><![CDATA[Î÷êè]]></phrase>
 			<phrase name="p3tz_faq_steal" date="1156970238" username="tehste" version="3.3.0"><![CDATA[Stealing p3tz and items]]></phrase>
 			<phrase name="p3tz_faq_types" date="1156970143" username="tehste" version="3.3.0"><![CDATA[Basic P3tz Types]]></phrase>
-			<phrase name="petz_faq" date="1156969952" username="tehste" version="3.3.0"><![CDATA[Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¿Ð¾ Ð¶Ð¸Ð²Ð¾Ñ‚Ð½Ñ‹Ð¼]]></phrase>
-			<phrase name="petz_faq_battlesetc" date="1192922520" username="alex Roosso" version="3.3.1"><![CDATA[Ð‘Ð¾Ð¸, Ð¸Ð³Ñ€Ð° Ð¸ Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¶Ð¸Ð²Ð¾Ñ‚Ð½Ñ‹Ñ….]]></phrase>
-			<phrase name="petz_faq_createegg" date="1192922579" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÑÐ¹Ñ†Ð°]]></phrase>
-			<phrase name="petz_faq_createpet" date="1192922568" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð°]]></phrase>
+			<phrase name="petz_faq" date="1156969952" username="tehste" version="3.3.0"><![CDATA[Ñïðàâêà ïî æèâîòíûì]]></phrase>
+			<phrase name="petz_faq_battlesetc" date="1192922520" username="alex Roosso" version="3.3.1"><![CDATA[Áîè, èãðà è òðåíèðîâêà æèâîòíûõ.]]></phrase>
+			<phrase name="petz_faq_createegg" date="1192922579" username="alex Roosso" version="3.3.1"><![CDATA[Ñîçäàíèå ÿéöà]]></phrase>
+			<phrase name="petz_faq_createpet" date="1192922568" username="alex Roosso" version="3.3.1"><![CDATA[Ñîçäàíèå ïèòîìöà]]></phrase>
 			<phrase name="petz_faq_items" date="1156970097" username="tehste" version="3.3.0"><![CDATA[Pet Items]]></phrase>
-			<phrase name="petz_faq_otherstuff" date="1192922628" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÑ€Ð¾Ñ‡ÐµÐµ Ð¾ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð°Ñ…]]></phrase>
-			<phrase name="petz_faq_petinfo" date="1192922594" username="alex Roosso" version="3.3.1"><![CDATA[Ð§Ñ‚Ð¾ Ñ‚Ð°ÐºÐ¾Ðµ ÐŸÐ¸Ñ‚Ð¾Ð¼Ð½Ð¸Ðº?]]></phrase>
-			<phrase name="petz_faq_started" date="1192922709" username="alex Roosso" version="3.3.1"><![CDATA[ÐšÐ°Ðº Ð½Ð°Ñ‡Ð°Ñ‚ÑŒ?]]></phrase>
-			<phrase name="petz_faq_stats" date="1156969994" username="tehste" version="3.3.0"><![CDATA[Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð·Ð²ÐµÑ€ÑƒÑˆÐµÐº]]></phrase>
-			<phrase name="petz_faq_tradingpet" date="1156970084" username="tehste" version="3.3.0"><![CDATA[Ð Ñ‹Ð½Ð¾Ðº Ð¶Ð¸Ð²Ð¾Ñ‚Ð½Ñ‹Ñ…]]></phrase>
+			<phrase name="petz_faq_otherstuff" date="1192922628" username="alex Roosso" version="3.3.1"><![CDATA[Ïðî÷åå î ïèòîìöàõ]]></phrase>
+			<phrase name="petz_faq_petinfo" date="1192922594" username="alex Roosso" version="3.3.1"><![CDATA[×òî òàêîå Ïèòîìíèê?]]></phrase>
+			<phrase name="petz_faq_started" date="1192922709" username="alex Roosso" version="3.3.1"><![CDATA[Êàê íà÷àòü?]]></phrase>
+			<phrase name="petz_faq_stats" date="1156969994" username="tehste" version="3.3.0"><![CDATA[Ñòàòèñòèêà çâåðóøåê]]></phrase>
+			<phrase name="petz_faq_tradingpet" date="1156970084" username="tehste" version="3.3.0"><![CDATA[Ðûíîê æèâîòíûõ]]></phrase>
 		</phrasetype>
-		<phrasetype name="ÐŸÐµÑ€ÐµÐ¼ÐµÑ‰ÐµÐ½Ð¸Ñ" fieldname="frontredirect">
-			<phrase name="petz_redirect" date="0" username="" version=""><![CDATA[ÐŸÐµÑ€ÐµÐ°Ð´Ñ€ÐµÑÐ°Ñ†Ð¸Ñ...]]></phrase>
+		<phrasetype name="Ïåðåìåùåíèÿ" fieldname="frontredirect">
+			<phrase name="petz_redirect" date="0" username="" version=""><![CDATA[Ïåðåàäðåñàöèÿ...]]></phrase>
 		</phrasetype>
-		<phrasetype name="ÐžÑÐ½Ð¾Ð²Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸" fieldname="vbsettings">
-			<phrase name="setting_petz_anypetitem_desc" date="1193103715" username="alex Roosso" version="3.3.1"><![CDATA[Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŽ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¸ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ñ‹ Ð½Ð° Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ² Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð²?]]></phrase>
-			<phrase name="setting_petz_anypetitem_title" date="1193103715" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÑ€Ð¸Ð²ÑÐ·ÐºÐ° Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð¾Ð² Ðº Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŽ]]></phrase>
-			<phrase name="setting_petz_auctiondays_desc" date="1193107676" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ð´Ð½ÐµÐ¹ Ð´Ð»Ñ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð°ÑƒÐºÑ†Ð¸Ð¾Ð½Ð°.]]></phrase>
-			<phrase name="setting_petz_auctiondays_title" date="1193107676" username="alex Roosso" version="3.3.1"><![CDATA[Ð”Ð»Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð°ÑƒÐºÑ†Ð¸Ð¾Ð½Ð°]]></phrase>
-			<phrase name="setting_petz_baby_desc" date="1193104413" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ€Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… ÑÐ²ÑÐ·ÐµÐ¹ Ð¼ÐµÐ¶Ð´Ñƒ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð°Ð¼Ð¸?]]></phrase>
-			<phrase name="setting_petz_baby_title" date="1193104413" username="alex Roosso" version="3.3.1"><![CDATA[Ð Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÑÐºÐ°Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°]]></phrase>
-			<phrase name="setting_petz_battleforum_desc" date="1193104698" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ID Ñ„Ð¾Ñ€ÑƒÐ¼Ð° Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼ Ð±ÑƒÐ´ÑƒÑ‚ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ ÑÐ¾Ð·Ð´Ð°Ð²Ð°Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð¾ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ð¸ Ð½Ð¾Ð²Ð¾Ð¹ Ð°Ñ€ÐµÐ½Ñ‹ Ð´Ð»Ñ Ð±Ð¾Ñ. <dfn>Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ 0 Ñ‡Ñ‚Ð¾ Ð±Ñ‹ Ð²Ñ‹ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¾Ð¿Ñ†Ð¸ÑŽ</dfn>]]></phrase>
-			<phrase name="setting_petz_battleforum_title" date="1193104698" username="alex Roosso" version="3.3.1"><![CDATA[Ð¤Ð¾Ñ€ÑƒÐ¼ ÐŸÐ¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ²]]></phrase>
-			<phrase name="setting_petz_battlelevel_desc" date="1193117341" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼ÑƒÑŽ Ñ€Ð°Ð·Ð½Ð¸Ñ†Ñƒ ÑƒÑ€Ð¾Ð²Ð½ÐµÐ¹ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ² Ð² Ð±Ð¾ÑÑ…. Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ 2 Ð¸Ð»Ð¸ 3. ÐžÐ¿Ñ†Ð¸Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ +-Ñ‡Ð¸ÑÐ»Ð¾. Ð¢Ð¾ ÐµÑÑ‚ÑŒ ÑƒÐºÐ°Ð·Ð°Ð² Ð·Ð´ÐµÑÑŒ 2 Ð¸ Ð²Ñ‹ÑÑ‚Ð°Ð²Ð»ÑÑ Ð² Ð±Ð¾Ð¹ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð° 5 ÑƒÑ€Ð¾Ð²Ð½Ñ, Ð’Ñ‹ ÑÐ¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð½Ð¸ÐºÐ¾Ð² Ð¾Ñ‚ 3 Ð´Ð¾ 7 ÑƒÑ€Ð¾Ð²Ð½Ñ.]]></phrase>
-			<phrase name="setting_petz_battlelevel_title" date="1193117341" username="alex Roosso" version="3.3.1"><![CDATA[Ð‘Ð¾ÐµÐ²Ñ‹Ðµ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð¸Ñ]]></phrase>
-			<phrase name="setting_petz_battlelog_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð¥Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð²ÐµÑÑ‚Ð¸ Ð»Ð¾Ð³Ð¸ Ð±Ð¾ÐµÐ², Ð´Ð»Ñ Ð¸Ñ… Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ³Ð¾ Ñ€Ð°ÑÐ¼Ð¾Ñ‚Ñ€ÐµÐ½Ð¸Ñ. ÐžÐ¿Ñ†Ð¸Ñ Ð½Ðµ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÑ‚ÑÑ Ð´Ð»Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¸Ñ… Ñ„Ð¾Ñ€ÑƒÐ¼Ð¾Ð², Ñ‚Ð°Ðº ÐºÐ°Ðº Ð¼Ð¾Ð¶ÐµÑ‚ Ð²Ñ‹Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐ¸Ðµ Ð½Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð½Ð° ÑÐµÑ€Ð²ÐµÑ€.]]></phrase>
-			<phrase name="setting_petz_battlelog_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐµÑÑ‚Ð¸ Ð»Ð¾Ð³ Ð±Ð¾ÐµÐ²?]]></phrase>
-			<phrase name="setting_petz_bbdate_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð¸Ð¾Ð´ Ð²Ñ‹Ð½Ð°ÑˆÐ¸Ð²Ð°Ð½Ð¸Ñ ÑÐ¹Ñ†Ð° Ð¿Ñ€ÐµÐ¶Ð´Ðµ Ñ‡ÐµÐ¼ Ð¸Ð· Ð½ÐµÐ³Ð¾ Ð²Ñ‹Ð»ÑƒÐ¿Ð¸Ñ‚ÑÑ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐµÐº. ÐŸÐµÑ€Ð¸Ð¾Ð´ ÑƒÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð² ÑÐµÐºÑƒÐ½Ð´Ð°Ñ….
-<dfn>64000 = 1 Ð”ÐµÐ½ÑŒ</dfn>]]></phrase>
-			<phrase name="setting_petz_bbdate_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÐµÑ€Ð¸Ð¾Ð´ Ð²Ñ‹Ð½Ð°ÑˆÐ¸Ð²Ð°Ð½Ð¸Ñ ÑÐ¹Ñ†Ð°]]></phrase>
+		<phrasetype name="Îñíîâíûå íàñòðîéêè" fieldname="vbsettings">
+			<phrase name="setting_petz_anypetitem_desc" date="1193103715" username="alex Roosso" version="3.3.1"><![CDATA[Ðàçðåøèòü ïîëüçîâàòåëþ èñïîëüçîâàòü ñâîè ïðåäìåòû íà ïèòîìöåâ äðóãèõ èãðîêîâ?]]></phrase>
+			<phrase name="setting_petz_anypetitem_title" date="1193103715" username="alex Roosso" version="3.3.1"><![CDATA[Ïðèâÿçêà ïðåäìåòîâ ê ïîëüçîâàòåëþ]]></phrase>
+			<phrase name="setting_petz_auctiondays_desc" date="1193107676" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ìàêñèìàëüíîå êîë-âî äíåé äëÿ ïðîäîëæèòåëüíîñòè àóêöèîíà.]]></phrase>
+			<phrase name="setting_petz_auctiondays_title" date="1193107676" username="alex Roosso" version="3.3.1"><![CDATA[Äëèòåëüíîñòü àóêöèîíà]]></phrase>
+			<phrase name="setting_petz_baby_desc" date="1193104413" username="alex Roosso" version="3.3.1"><![CDATA[Âêëþ÷èòü èñïîëüçîâàíèå ðîäñòâåííûõ ñâÿçåé ìåæäó ïèòîìöàìè?]]></phrase>
+			<phrase name="setting_petz_baby_title" date="1193104413" username="alex Roosso" version="3.3.1"><![CDATA[Ðîäèòåëüñêàÿ ñèñòåìà]]></phrase>
+			<phrase name="setting_petz_battleforum_desc" date="1193104698" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ID ôîðóìà â êîòîðîì áóäóò àâòîìàòè÷åñêè ñîçäàâàòü ñîîáùåíèÿ î ñîçäàíèè íîâîé àðåíû äëÿ áîÿ. <dfn>Óêàæèòå 0 ÷òî áû âûêëþ÷èòü îïöèþ</dfn>]]></phrase>
+			<phrase name="setting_petz_battleforum_title" date="1193104698" username="alex Roosso" version="3.3.1"><![CDATA[Ôîðóì Ïèòîìöåâ]]></phrase>
+			<phrase name="setting_petz_battlelevel_desc" date="1193117341" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå äîïóñòèìóþ ðàçíèöó óðîâíåé ïèòîìöåâ â áîÿõ. Óêàæèòå 2 èëè 3. Îïöèÿ ðàáîòàåò +-÷èñëî. Òî åñòü óêàçàâ çäåñü 2 è âûñòàâëÿÿ â áîé ïèòîìöà 5 óðîâíÿ, Âû ñìîæåòå ïîëó÷èòü ïðîòèâíèêîâ îò 3 äî 7 óðîâíÿ.]]></phrase>
+			<phrase name="setting_petz_battlelevel_title" date="1193117341" username="alex Roosso" version="3.3.1"><![CDATA[Áîåâûå ðàçëè÷èÿ]]></phrase>
+			<phrase name="setting_petz_battlelog_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Õîòèòå âåñòè ëîãè áîåâ, äëÿ èõ ïîñëåäóþùåãî ðàñìîòðåíèÿ. Îïöèÿ íå ðåêîìåíäóåòñÿ äëÿ áîëüøèõ ôîðóìîâ, òàê êàê ìîæåò âûçûâàòü áîëüøèå íàãðóçêè íà ñåðâåð.]]></phrase>
+			<phrase name="setting_petz_battlelog_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âåñòè ëîã áîåâ?]]></phrase>
+			<phrase name="setting_petz_bbdate_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ïåðèîä âûíàøèâàíèÿ ÿéöà ïðåæäå ÷åì èç íåãî âûëóïèòñÿ òàìàãî÷åê. Ïåðèîä óêàçûâàåòñÿ â ñåêóíäàõ.
+<dfn>64000 = 1 Äåíü</dfn>]]></phrase>
+			<phrase name="setting_petz_bbdate_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ïåðèîä âûíàøèâàíèÿ ÿéöà]]></phrase>
 			<phrase name="setting_petz_betodds_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Use automatic odds creation system? If not the prize will be double the stake.]]></phrase>
 			<phrase name="setting_petz_betodds_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Gambling Odds]]></phrase>
-			<phrase name="setting_petz_bexpire_desc" date="1193103331" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð² ÑÐµÐºÑƒÐ½Ð´Ð°Ñ… Ð²Ñ€ÐµÐ¼Ñ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ñ Ð±Ð¸Ñ‚Ð²Ñ‹, Ð¿Ð¾ÑÐ»Ðµ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±Ð¾Ð¹ Ð±ÑƒÐ´ÐµÑ‚ Ð°Ð½ÑƒÐ»Ð¸Ñ€Ð¾Ð²Ð°Ð½.<dfn>64000 = 1 Ð”ÐµÐ½ÑŒ</dfn>]]></phrase>
-			<phrase name="setting_petz_bexpire_title" date="1193103331" username="alex Roosso" version="3.3.1"><![CDATA[Ð’Ñ€ÐµÐ¼Ñ Ñ‚Ð°Ð¹Ð¼Ð°ÑƒÑ‚Ð° Ð±Ð¾Ñ]]></phrase>
-			<phrase name="setting_petz_daycare_desc" date="1192953107" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð´Ð½Ñ Ð² Ð¿Ñ€Ð¸ÑŽÑ‚Ðµ.]]></phrase>
-			<phrase name="setting_petz_daycare_title" date="1192953107" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÑ€Ð¸ÑŽÑ‚]]></phrase>
-			<phrase name="setting_petz_entrybrawl_desc" date="1193104285" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ñ†ÐµÐ½Ñƒ Ð·Ð° ÑƒÑ‡Ð°ÑÑ‚Ð¸Ðµ Ð² Ð±Ð¾ÑŽ.
-<br />Ð­Ñ‚Ð° ÑÑƒÐ¼Ð¼Ð° Ð±ÑƒÐ´ÐµÑ‚ ÑÐ½ÑÑ‚Ð° Ñ Ð¸Ð³Ñ€Ð¾ÐºÐ° Ð¿Ñ€Ð¸ Ð·Ð°ÑÐ²ÐºÐµ Ð½Ð° ÑƒÑ‡Ð°ÑÑ‚Ð¸Ðµ Ð² Ð±Ð¾ÑŽ, Ð½Ð° Ð°Ñ€ÐµÐ½Ðµ.]]></phrase>
-			<phrase name="setting_petz_entrybrawl_title" date="1193104285" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÑƒÑ‡Ð°ÑÑ‚Ð¸Ñ Ð² Ð±Ð¾ÑŽ]]></phrase>
-			<phrase name="setting_petz_groupcreate_desc" date="1193107619" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð¼Ð¾Ð³ÑƒÑ‚ ÑÐ¾Ð·Ð´Ð°Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¸Ñ… Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ². <dfn>Ð”Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð·Ð°Ð¿ÑÑ‚ÑƒÑŽ.</dfn><i>Ð¿Ñ€Ð¸Ð¼ÐµÑ€: 1,2,5,6,7</i>]]></phrase>
-			<phrase name="setting_petz_groupcreate_title" date="1193107619" username="alex Roosso" version="3.3.1"><![CDATA[Ð“Ñ€ÑƒÐ¿Ð¿Ð° ÑÐ¾Ð·Ð´Ð°Ñ‚ÐµÐ»ÐµÐ¹]]></phrase>
-			<phrase name="setting_petz_groupimmune_desc" date="1193107601" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð·Ð°Ñ‰Ð¸Ñ‰ÐµÐ½Ñ‹ Ð¾Ñ‚ Ð²Ð¾Ñ€Ð¾Ð²ÑÑ‚Ð²Ð°.
-<dfn>Ð”Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð·Ð°Ð¿ÑÑ‚ÑƒÑŽ.</dfn><i>Ð¿Ñ€Ð¸Ð¼ÐµÑ€: 1,2,5,6,7</i>]]></phrase>
-			<phrase name="setting_petz_groupimmune_title" date="1193107601" username="alex Roosso" version="3.3.1"><![CDATA[Ð—Ð°Ñ‰Ð¸Ñ‰ÐµÐ½Ð½Ñ‹Ðµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹]]></phrase>
-			<phrase name="setting_petz_groupown_desc" date="1193107526" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð¼Ð¾Ð³ÑƒÑ‚ Ð¸Ð¼ÐµÑ‚ÑŒ ÑÐ²Ð¾Ð¸Ñ… Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ². <dfn>Ð”Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð·Ð°Ð¿ÑÑ‚ÑƒÑŽ.</dfn><i>Ð¿Ñ€Ð¸Ð¼ÐµÑ€: 1,2,5,6,7</i>]]></phrase>
-			<phrase name="setting_petz_groupown_title" date="1193107526" username="alex Roosso" version="3.3.1"><![CDATA[Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†ÐµÐ²]]></phrase>
-			<phrase name="setting_petz_groupview_desc" date="1193104179" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ID Ð³Ñ€ÑƒÐ¿Ð¿ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð¼Ð¾Ð³ÑƒÑ‚ Ð²Ð¸Ð´ÐµÑ‚ÑŒ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ². <dfn>Ð”Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð·Ð°Ð¿ÑÑ‚ÑƒÑŽ.</dfn><i>Ð¿Ñ€Ð¸Ð¼ÐµÑ€: 1,2,5,6,7</i>]]></phrase>
-			<phrase name="setting_petz_groupview_title" date="1193104179" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ²]]></phrase>
-			<phrase name="setting_petz_guild_desc" date="1193104332" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð³Ð¸Ð»ÑŒÐ´Ð¸Ð¸.]]></phrase>
-			<phrase name="setting_petz_guild_h_desc" date="1192942451" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð²Ñ‹ÑÐ¾Ñ‚Ñ‹ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð° Ð³Ð¸Ð»ÑŒÐ´Ð¸Ð¸ Ð² Ð¿Ð¸ÐºÑÐµÐ»ÑÑ….]]></phrase>
-			<phrase name="setting_petz_guild_h_title" date="1192942451" username="alex Roosso" version="3.3.1"><![CDATA[Ð’Ñ‹ÑÐ¾Ñ‚Ð° Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð° Ð³Ð¸Ð»ÑŒÐ´Ð¸Ð¸]]></phrase>
-			<phrase name="setting_petz_guild_title" date="1193104332" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð³Ð¸Ð»ÑŒÐ´Ð¸Ð¸]]></phrase>
-			<phrase name="setting_petz_guild_w_desc" date="1192942414" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ ÑˆÐ¸Ñ€Ð¸Ð½Ñ‹ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð° Ð³Ð¸Ð»ÑŒÐ´Ð¸Ð¸ Ð² Ð¿Ð¸ÐºÑÐµÐ»ÑÑ….]]></phrase>
-			<phrase name="setting_petz_guild_w_title" date="1192942414" username="alex Roosso" version="3.3.1"><![CDATA[Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð° Ð³Ð¸Ð»ÑŒÐ´Ð¸Ð¹]]></phrase>
-			<phrase name="setting_petz_hunger_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð³Ð¾Ð»Ð¾Ð´Ð°, ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ Ð¿Ð¸Ñ‚Ð¾Ð¼ÐµÑ† Ð² Ñ‚ÐµÑ‡ÐµÐ½Ð¸Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð´Ð½Ñ ÐµÑÐ»Ð¸ ÐµÐ³Ð¾ Ð½Ðµ ÐºÐ¾Ñ€Ð¼Ð¸Ñ‚ÑŒ.]]></phrase>
-			<phrase name="setting_petz_hunger_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ÐÐ¿Ð¿ÐµÑ‚Ð¸Ñ‚]]></phrase>
-			<phrase name="setting_petz_jspb_desc" date="1193117168" username="alex Roosso" version="3.3.1"><![CDATA[Ð­Ñ‚Ð¾ Ð¾Ð¿Ñ†Ð¸Ñ ÑÐ´ÐµÐ»Ð°Ð½Ð° Ð² Ð¾Ð±Ñ…Ð¾Ð´ Ð·Ð°Ñ‰Ð¸Ñ‚Ñ‹ Ð¾Ñ‚ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð¾Ð² ActiveX. ÐÐ¾ Ð´Ð°Ð½Ð½Ð°Ñ Ð¾Ð¿Ñ†Ð¸Ñ Ð¼Ð¾Ð¶ÐµÑ‚ Ð½ÐµÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ñ‚ÑŒ Ñ AJAX. ÐŸÐ¾ÑÑ‚Ð¾Ð¼Ñƒ ÐµÑÐ»Ð¸ Ð’Ñ‹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð½Ð° ÑÐ²Ð¾ÐµÐ¼ Ñ„Ð¾Ñ€ÑƒÐ¼Ðµ AJAX Ð¼Ñ‹ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼ Ð’Ð°Ð¼ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½ÑƒÑŽ Ð¾Ð¿Ñ†Ð¸ÑŽ.]]></phrase>
-			<phrase name="setting_petz_jspb_title" date="1193117168" username="alex Roosso" version="3.3.1"><![CDATA[JavaScript Ð² ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÑ…]]></phrase>
-			<phrase name="setting_petz_killchance_desc" date="1193116563" username="alex Roosso" version="3.3.1"><![CDATA[ÐšÐ°ÐºÐ¾Ð²Ð° Ð²ÐµÑ€Ð¾ÑÑ‚Ð½Ð¾ÑÑ‚ÑŒ ÑƒÐ´Ð°Ñ‡Ð½Ð¾Ð³Ð¾ ÑƒÐ¼ÐµÑ€Ñ‚Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð° Ñ Ð¿Ð¾Ð¼Ð¾ÑˆÑŒÑŽ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð°. Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð² Ð´Ð¸Ð°Ð¿Ð¾Ð·Ð¾Ð½Ðµ Ð¾Ñ‚ 1 Ð´Ð¾ 100]]></phrase>
-			<phrase name="setting_petz_killchance_title" date="1193116563" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ð¼ÐµÑ€Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ ÑˆÐ°Ð½Ñ]]></phrase>
-			<phrase name="setting_petz_levelup_desc" date="1193117008" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ Ð´Ð¸Ð°Ð¿Ð¾Ð·Ð¾Ð½Ðµ Ð¾Ñ‚ 1 Ð´Ð¾ 100 ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð¿Ð¾Ð²Ñ‹ÑˆÐµÐ½Ð¸Ñ Ñ…Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€Ð¸ÑÑ‚Ð¸Ðº Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð° Ð¿Ñ€Ð¸ Ð²Ñ‹Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸Ð¸ Ð½Ð° ÑƒÐ´Ð¸Ð½ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ.]]></phrase>
+			<phrase name="setting_petz_bexpire_desc" date="1193103331" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå â ñåêóíäàõ âðåìÿ ïðîäîëæåíèÿ áèòâû, ïîñëå êîòîðîãî áîé áóäåò àíóëèðîâàí.<dfn>64000 = 1 Äåíü</dfn>]]></phrase>
+			<phrase name="setting_petz_bexpire_title" date="1193103331" username="alex Roosso" version="3.3.1"><![CDATA[Âðåìÿ òàéìàóòà áîÿ]]></phrase>
+			<phrase name="setting_petz_daycare_desc" date="1192953107" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ñòîèìîñòü îäíîãî äíÿ â ïðèþòå.]]></phrase>
+			<phrase name="setting_petz_daycare_title" date="1192953107" username="alex Roosso" version="3.3.1"><![CDATA[Ïðèþò]]></phrase>
+			<phrase name="setting_petz_entrybrawl_desc" date="1193104285" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå öåíó çà ó÷àñòèå â áîþ.
+<br />Ýòà ñóììà áóäåò ñíÿòà ñ èãðîêà ïðè çàÿâêå íà ó÷àñòèå â áîþ, íà àðåíå.]]></phrase>
+			<phrase name="setting_petz_entrybrawl_title" date="1193104285" username="alex Roosso" version="3.3.1"><![CDATA[Ñòîèìîñòü ó÷àñòèÿ â áîþ]]></phrase>
+			<phrase name="setting_petz_groupcreate_desc" date="1193107619" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ãðóïïû ïîëüçîâàòåëåé êîòîðûå ìîãóò ñîçäàâàòü ñâîèõ ïèòîìöåâ. <dfn>Äëÿ ðàçäåëåíèÿ èñïîëüçóéòå çàïÿòóþ.</dfn><i>ïðèìåð: 1,2,5,6,7</i>]]></phrase>
+			<phrase name="setting_petz_groupcreate_title" date="1193107619" username="alex Roosso" version="3.3.1"><![CDATA[Ãðóïïà ñîçäàòåëåé]]></phrase>
+			<phrase name="setting_petz_groupimmune_desc" date="1193107601" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ãðóïïû ïîëüçîâàòåëåé, êîòîðûå çàùèùåíû îò âîðîâñòâà.
+<dfn>Äëÿ ðàçäåëåíèÿ èñïîëüçóéòå çàïÿòóþ.</dfn><i>ïðèìåð: 1,2,5,6,7</i>]]></phrase>
+			<phrase name="setting_petz_groupimmune_title" date="1193107601" username="alex Roosso" version="3.3.1"><![CDATA[Çàùèùåííûå ãðóïïû]]></phrase>
+			<phrase name="setting_petz_groupown_desc" date="1193107526" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ãðóïïû ïîëüçîâàòåëåé êîòîðûå ìîãóò èìåòü ñâîèõ ïèòîìöåâ. <dfn>Äëÿ ðàçäåëåíèÿ èñïîëüçóéòå çàïÿòóþ.</dfn><i>ïðèìåð: 1,2,5,6,7</i>]]></phrase>
+			<phrase name="setting_petz_groupown_title" date="1193107526" username="alex Roosso" version="3.3.1"><![CDATA[Ãðóïïû âëàäåëüöåâ]]></phrase>
+			<phrase name="setting_petz_groupview_desc" date="1193104179" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ID ãðóïï ïîëüçîâàòåëåé êîòîðûå ìîãóò âèäåòü ñèñòåìó ïèòîìöåâ. <dfn>Äëÿ ðàçäåëåíèÿ èñïîëüçóéòå çàïÿòóþ.</dfn><i>ïðèìåð: 1,2,5,6,7</i>]]></phrase>
+			<phrase name="setting_petz_groupview_title" date="1193104179" username="alex Roosso" version="3.3.1"><![CDATA[Ïðîñìîòð ïèòîìöåâ]]></phrase>
+			<phrase name="setting_petz_guild_desc" date="1193104332" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ñòîèìîñòü ñîçäàíèÿ ãèëüäèè.]]></phrase>
+			<phrase name="setting_petz_guild_h_desc" date="1192942451" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ìàêñèìàëüíîå çíà÷åíèå äëÿ âûñîòû ëîãîòèïà ãèëüäèè â ïèêñåëÿõ.]]></phrase>
+			<phrase name="setting_petz_guild_h_title" date="1192942451" username="alex Roosso" version="3.3.1"><![CDATA[Âûñîòà ëîãîòèïà ãèëüäèè]]></phrase>
+			<phrase name="setting_petz_guild_title" date="1193104332" username="alex Roosso" version="3.3.1"><![CDATA[Ñòîèìîñòü ãèëüäèè]]></phrase>
+			<phrase name="setting_petz_guild_w_desc" date="1192942414" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ìàêñèìàëüíîå çíà÷åíèå äëÿ øèðèíû ëîãîòèïà ãèëüäèè â ïèêñåëÿõ.]]></phrase>
+			<phrase name="setting_petz_guild_w_title" date="1192942414" username="alex Roosso" version="3.3.1"><![CDATA[Øèðèíà ëîãîòèïà ãèëüäèé]]></phrase>
+			<phrase name="setting_petz_hunger_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå çíà÷åíèå ãîëîäà, êîòîðîå ïîëó÷èò ïèòîìåö â òå÷åíèè îäíîãî äíÿ åñëè åãî íå êîðìèòü.]]></phrase>
+			<phrase name="setting_petz_hunger_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Àïïåòèò]]></phrase>
+			<phrase name="setting_petz_jspb_desc" date="1193117168" username="alex Roosso" version="3.3.1"><![CDATA[Ýòî îïöèÿ ñäåëàíà â îáõîä çàùèòû îò êîìïîíåíòîâ ActiveX. Íî äàííàÿ îïöèÿ ìîæåò íåêîðåêòíî ðàáîòàòü ñ AJAX. Ïîýòîìó åñëè Âû èñïîëüçóéòå íà ñâîåì ôîðóìå AJAX ìû ðåêîìåíäóåì Âàì îòêëþ÷èòü äàííóþ îïöèþ.]]></phrase>
+			<phrase name="setting_petz_jspb_title" date="1193117168" username="alex Roosso" version="3.3.1"><![CDATA[JavaScript â ñîîáùåíèÿõ]]></phrase>
+			<phrase name="setting_petz_killchance_desc" date="1193116563" username="alex Roosso" version="3.3.1"><![CDATA[Êàêîâà âåðîÿòíîñòü óäà÷íîãî óìåðòâëåíèÿ ïèòîìöà ñ ïîìîøüþ ïðåäìåòà. Óêàæèòå â äèàïîçîíå îò 1 äî 100]]></phrase>
+			<phrase name="setting_petz_killchance_title" date="1193116563" username="alex Roosso" version="3.3.1"><![CDATA[Ñìåðòåëüíûé øàíñ]]></phrase>
+			<phrase name="setting_petz_levelup_desc" date="1193117008" username="alex Roosso" version="3.3.1"><![CDATA[Â äèàïîçîíå îò 1 äî 100 óêàæèòå ïðîöåíò ïîâûøåíèÿ õàðàêòåðèñòèê ïèòîìöà ïðè âûðàñòàíèè íà óäèí óðîâåíü.]]></phrase>
 			<phrase name="setting_petz_levelup_title" date="1193117008" username="alex Roosso" version="3.3.1"><![CDATA[Level Up Stats]]></phrase>
-			<phrase name="setting_petz_log_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐµÑÑ‚Ð¸ Ð»Ð¾Ð³Ð¸ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ð¹? Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÑÑ‚Ñƒ Ð¾Ð¿Ñ†Ð¸ÑŽ Ð½Ð° Ð±Ð¾Ð»ÑŒÑˆÐ¸Ñ… Ñ„Ð¾Ñ€ÑƒÐ¼Ð°Ñ…, Ñ‚Ð°Ðº ÐºÐ°Ðº Ð¾Ð½Ð° Ð¼Ð¾Ð¶ÐµÑ‚ Ð²Ñ‹Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÐµÑ€ÑŒÐµÐ·Ð½Ñ‹Ðµ Ð½Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð½Ð° ÑÐµÑ€Ð²ÐµÑ€Ðµ.]]></phrase>
-			<phrase name="setting_petz_log_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐµÐ´ÐµÐ½Ð¸Ðµ Ð›Ð¾Ð³Ð¾Ð²]]></phrase>
-			<phrase name="setting_petz_malnutrition_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑƒÑ…ÑƒÐ´ÑˆÐµÐ½Ð¸Ñ Ð·Ð´Ð¾Ñ€Ð¾Ð²ÑŒÑ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð° Ð² ÑÐ»ÑƒÑ‡Ð°Ðµ ÐµÐ³Ð¾ Ð³Ð¾Ð»Ð¾Ð´Ð°Ð½Ð¸Ñ.]]></phrase>
-			<phrase name="setting_petz_malnutrition_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð“Ð¾Ð»Ð¾Ð´Ð°Ð½Ð¸Ðµ]]></phrase>
-			<phrase name="setting_petz_maxbrawl_desc" date="1193103912" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ¾Ð² Ð´Ð»Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ð¾Ð²Ñ‹Ñ… Ð±Ð¾ÐµÐ²]]></phrase>
-			<phrase name="setting_petz_maxbrawl_title" date="1193103912" username="alex Roosso" version="3.3.1"><![CDATA[ÐšÐ¾Ð½Ð´Ð¸Ð´Ð°Ñ‚Ñ‹ Ð² Ð±Ð¾Ð¹]]></phrase>
-			<phrase name="setting_petz_maxitems_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð¾Ð² Ð¼Ð¾Ð¶ÐµÑ‚ Ð¸Ð¼ÐµÑ‚ÑŒ Ð¾Ð´Ð¸Ð½ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸Ðº?]]></phrase>
-			<phrase name="setting_petz_maxitems_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð¾Ð²]]></phrase>
-			<phrase name="setting_petz_maxpetz_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ð¶Ð¸Ð²Ð¾Ñ‚Ð½Ñ‹Ñ… Ð¼Ð¾Ð¶ÐµÑ‚ Ð¸Ð¼ÐµÑ‚ÑŒ Ð¾Ð´Ð¸Ð½ Ð¸Ð³Ñ€Ð¾Ðº?]]></phrase>
-			<phrase name="setting_petz_maxpetz_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ Ð¶Ð¸Ð²Ð¾Ñ‚Ð½Ñ‹Ñ…]]></phrase>
-			<phrase name="setting_petz_on_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐµÐ¹?]]></phrase>
-			<phrase name="setting_petz_on_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»/Ð’Ñ‹ÐºÐ» Ð¢Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐµÐ¹]]></phrase>
-			<phrase name="setting_petz_pfield_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° Ñ‚Ð°Ð¼Ð¾Ð³Ð¾Ñ‡ÐºÐ¸ Ð¼Ð¾Ð¶ÐµÑ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ñ‚ÑŒ Ñ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ð¼Ð¸ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ð¼Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°Ð¼Ð¸ Ð´Ð»Ñ vBulletin - vbPlaza, uCash, iPoints. Ð”Ð»Ñ Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ð¸ Ñ Ð¾Ð´Ð½Ð¾Ð¹ Ð¸Ð· ÑÐ¸ÑÑ‚ÐµÐ¼ ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð² Ð¿Ð¾Ð»Ðµ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ Ð·Ð½Ð°Ñ‡Ð½Ð¸Ðµ:
-<br />Ð”Ð»Ñ vbPlaza - vbbux
-<br />Ð”Ð»Ñ uCash - ucash
-<br />Ð”Ð»Ñ iPoints - ipoints]]></phrase>
-			<phrase name="setting_petz_pfield_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÐ¾Ð»Ðµ Ð´Ð»Ñ Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ð¸...]]></phrase>
-			<phrase name="setting_petz_ptable_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ÐšÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð‘Ð” Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼ Ñ…Ñ€Ð°Ð½ÑÑ‚ÑÑ Ð¾Ñ‡ÐºÐ¸. (ÐžÐ¿Ñ†Ð¸Ñ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð½ÑƒÑ‚Ñ‹Ñ… Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹)
-<br />ÐÐµ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÑ‚ÑÑ Ð¼ÐµÐ½ÑÑ‚ÑŒ ÐµÑ‘, ÐµÑÐ»Ð¸ Ð²Ñ‹ Ð½Ðµ Ð½Ð¸ÐºÐ¾Ð³Ð´Ð° Ð½Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð»Ð¸ Ñ Ð‘Ð°Ð·Ð°Ð¼Ð¸ Ð”Ð°Ð½Ð½Ñ‹Ñ….]]></phrase>
-			<phrase name="setting_petz_ptable_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð² Ð‘Ð” Ð´Ð»Ñ Ð¾Ñ‡ÐºÐ¾Ð² (!)]]></phrase>
-			<phrase name="setting_petz_putdown_desc" date="1192953136" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÑƒÑÑ‹Ð¿Ð»ÐµÐ½Ð¸Ðµ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡Ð¸ÐºÐ°.]]></phrase>
-			<phrase name="setting_petz_putdown_title" date="1192953136" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÑÑ‹Ð¿Ð»ÐµÐ½Ð¸Ðµ]]></phrase>
-			<phrase name="setting_petz_resurrect_desc" date="1192953185" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð²Ð¾ÑÐºÑ€ÐµÑˆÐµÐ½Ð¸Ñ ÑƒÐ¼ÐµÑ€ÑˆÐµÐ³Ð¾ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡Ð¸ÐºÐ°<dfn>0 - Ð²Ñ‹ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ Ð²Ð¾ÑÐºÑ€ÐµÑˆÐµÐ½Ð¸Ðµ</dfn>]]></phrase>
-			<phrase name="setting_petz_resurrect_title" date="1192953185" username="alex Roosso" version="3.3.1"><![CDATA[Ð’Ð¾ÑÐºÑ€ÐµÑˆÐµÐ½Ð¸Ðµ]]></phrase>
-			<phrase name="setting_petz_slowexp_desc" date="1193117418" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¾Ñ‚ÑÑ‚Ð°Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð¾Ð¿Ñ‹Ñ‚Ð° Ð²Ð¾ Ð²Ñ€ÐµÐ¼Ñ Ð±Ð¾Ñ.]]></phrase>
-			<phrase name="setting_petz_slowexp_title" date="1193117418" username="alex Roosso" version="3.3.1"><![CDATA[ÐžÐ¿Ñ‹Ñ‚]]></phrase>
-			<phrase name="setting_petz_stealitemfine_desc" date="1193116904" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð²Ð¾Ñ€Ð¾Ð²ÑÐºÐ¾Ð¹ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð¿Ð¾Ñ‚ÐµÑ€Ð¸ Ñ€ÐµÐ¿ÑƒÑ‚Ð°Ñ†Ð¸Ð¸, Ð² ÑÐ»ÑƒÑ‡Ð°Ðµ ÐµÑÐ»Ð¸ ÐºÑ€Ð°Ð¶Ð° Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ð° Ð½Ðµ ÑƒÐ´Ð°ÑÑ‚ÑŒÑÑ.]]></phrase>
-			<phrase name="setting_petz_stealitemfine_title" date="1193116904" username="alex Roosso" version="3.3.1"><![CDATA[Ð¨Ñ‚Ñ€Ð°Ñ„ ÐºÑ€Ð°Ð¶]]></phrase>
-			<phrase name="setting_petz_stealitems_desc" date="1193103416" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð² Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚Ð°Ñ… ÑˆÐ°Ð½Ñ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾Ð³Ð¾ Ð²Ð¾Ñ€Ð¾Ð²ÑÑ‚Ð²Ð° Ð²ÐµÑ‰ÐµÐ¹ Ñƒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ. <dfn>Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ 0 Ñ‡Ñ‚Ð¾ Ð±Ñ‹ Ð¸ÑÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÑ€Ð°Ð¶Ð¸</dfn>]]></phrase>
-			<phrase name="setting_petz_stealitems_title" date="1193103416" username="alex Roosso" version="3.3.1"><![CDATA[ÐšÑ€Ð°Ð¶Ð° Ð’ÐµÑ‰ÐµÐ¹]]></phrase>
-			<phrase name="setting_petz_stealpetfine_desc" date="1193116923" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð²Ð¾Ñ€Ð¾Ð²ÑÐºÐ¾Ð¹ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð¿Ð¾Ñ‚ÐµÑ€Ð¸ Ñ€ÐµÐ¿ÑƒÑ‚Ð°Ñ†Ð¸Ð¸, Ð² ÑÐ»ÑƒÑ‡Ð°Ðµ ÐµÑÐ»Ð¸ ÐºÑ€Ð°Ð¶Ð° Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð° Ð½Ðµ ÑƒÐ´Ð°ÑÑ‚ÑŒÑÑ.]]></phrase>
-			<phrase name="setting_petz_stealpetfine_title" date="1193116923" username="alex Roosso" version="3.3.1"><![CDATA[Ð¨Ñ‚Ñ€Ð°Ñ„ ÐºÑ€Ð°Ð¶]]></phrase>
-			<phrase name="setting_petz_stealpets_desc" date="1193103460" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð² Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚Ð°Ñ… ÑˆÐ°Ð½Ñ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾Ð³Ð¾ Ð²Ð¾Ñ€Ð¾Ð²ÑÑ‚Ð²Ð° Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð° Ñƒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.  <dfn>Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ 0 Ñ‡Ñ‚Ð¾ Ð±Ñ‹ Ð¸ÑÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÑ€Ð°Ð¶Ð¸</dfn>]]></phrase>
-			<phrase name="setting_petz_stealpets_title" date="1193103460" username="alex Roosso" version="3.3.1"><![CDATA[ÐšÑ€Ð°Ð¶Ð° Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ²]]></phrase>
-			<phrase name="setting_petz_stealrepfine_desc" date="1193116764" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½ÑƒÑŽ Ñ€ÐµÐ¿ÑƒÑ‚Ð°Ñ†Ð¸ÑŽ ÑƒÑ‡Ð°Ñ‚Ð½Ð¸ÐºÐ° Ð¿Ñ€Ð¸ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¾Ð½ ÑÐ¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð²ÐµÑ€ÑˆÐ°Ñ‚ÑŒ ÐºÑ€Ð°Ð¶Ð¸.]]></phrase>
-			<phrase name="setting_petz_stealrepfine_title" date="1193116764" username="alex Roosso" version="3.3.1"><![CDATA[Ð ÐµÐ¿ÑƒÑ‚Ð°Ñ†Ð¸Ñ Ð´Ð»Ñ ÐºÑ€Ð°Ð¶]]></phrase>
-			<phrase name="setting_petz_stock_desc" date="1193103611" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Ð¾Ð¿Ñ†Ð¸ÑŽ, Ð´Ð»Ñ Ð¾Ð³Ñ€Ð°Ð½Ð¸Ñ‡ÐµÐ½Ð¸Ñ Ð½Ð° ÐºÐ¾Ð»-Ð²Ð¾ Ð¿Ñ€Ð¾Ð´Ð°Ð¶ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² Ð·Ð°Ð´Ð°Ð½Ñ‹Ð¹ Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ðº Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸.]]></phrase>
-			<phrase name="setting_petz_stock_title" date="1193103611" username="alex Roosso" version="3.3.1"><![CDATA[Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÐºÐ»Ð°Ð´Ð°]]></phrase>
-			<phrase name="setting_petz_taxadopt_desc" date="1193104087" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð½Ð°Ð»Ð¾Ð³Ð° Ð½Ð° ÑÐ´ÐµÐ»ÐºÐ¸ Ð¿Ð¾ Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†Ð°Ð¼.]]></phrase>
-			<phrase name="setting_petz_taxadopt_title" date="1193104087" username="alex Roosso" version="3.3.1"><![CDATA[ÐÐ°Ð»Ð¾Ð³Ð¸]]></phrase>
+			<phrase name="setting_petz_log_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âåñòè ëîãè äåéñòâèé? Ðåêîìåíäóåì îòêëþ÷èòü ýòó îïöèþ íà áîëüøèõ ôîðóìàõ, òàê êàê îíà ìîæåò âûçûâàòü ñåðüåçíûå íàãðóçêè íà ñåðâåðå.]]></phrase>
+			<phrase name="setting_petz_log_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âåäåíèå Ëîãîâ]]></phrase>
+			<phrase name="setting_petz_malnutrition_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå çíà÷åíèå óõóäøåíèÿ çäîðîâüÿ ïèòîìöà â ñëó÷àå åãî ãîëîäàíèÿ.]]></phrase>
+			<phrase name="setting_petz_malnutrition_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ãîëîäàíèå]]></phrase>
+			<phrase name="setting_petz_maxbrawl_desc" date="1193103912" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ìàêñèìàëüíîå êîë-âî ó÷àñòíèêîâ äëÿ ãðóïïîâûõ áîåâ]]></phrase>
+			<phrase name="setting_petz_maxbrawl_title" date="1193103912" username="alex Roosso" version="3.3.1"><![CDATA[Êîíäèäàòû â áîé]]></phrase>
+			<phrase name="setting_petz_maxitems_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ñêîëüêî ïðåäìåòîâ ìîæåò èìåòü îäèí ó÷àñòíèê?]]></phrase>
+			<phrase name="setting_petz_maxitems_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ìàêñèìóì ïðåäìåòîâ]]></phrase>
+			<phrase name="setting_petz_maxpetz_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ñêîëüêî æèâîòíûõ ìîæåò èìåòü îäèí èãðîê?]]></phrase>
+			<phrase name="setting_petz_maxpetz_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ìàêñèìóì æèâîòíûõ]]></phrase>
+			<phrase name="setting_petz_on_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âêëþ÷èòü ñèñòåìó òàìàãî÷åé?]]></phrase>
+			<phrase name="setting_petz_on_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âêë/Âûêë Òàìàãî÷åé]]></phrase>
+			<phrase name="setting_petz_pfield_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ñèñòåìà òàìîãî÷êè ìîæåò ðàáîòàòü ñ íåñêîëüêèìè ôèíàíñîâûìè ñèñòåìàìè äëÿ vBulletin - vbPlaza, uCash, iPoints. Äëÿ èíòåãðàöèè ñ îäíîé èç ñèñòåì óêàæèòå â ïîëå ñëåäóþùèå çíà÷íèå:
+<br />Äëÿ vbPlaza - vbbux
+<br />Äëÿ uCash - ucash
+<br />Äëÿ iPoints - ipoints]]></phrase>
+			<phrase name="setting_petz_pfield_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ïîëå äëÿ èíòåãðàöèè...]]></phrase>
+			<phrase name="setting_petz_ptable_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Êîíòåéíåð ÁÄ â êîòîðîì õðàíÿòñÿ î÷êè. (Îïöèÿ òîëüêî äëÿ ïðîäâèíóòûõ ïîëüçîâàòåëåé)
+<br />Íå ðåêîìåíäóåòñÿ ìåíÿòü å¸, åñëè âû íå íèêîãäà íå ðàáîòàëè ñ Áàçàìè Äàííûõ.]]></phrase>
+			<phrase name="setting_petz_ptable_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[ß÷åéêà â ÁÄ äëÿ î÷êîâ (!)]]></phrase>
+			<phrase name="setting_petz_putdown_desc" date="1192953136" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ñòîèìîñòü óñûïëåíèå òàìàãî÷èêà.]]></phrase>
+			<phrase name="setting_petz_putdown_title" date="1192953136" username="alex Roosso" version="3.3.1"><![CDATA[Óñûïëåíèå]]></phrase>
+			<phrase name="setting_petz_resurrect_desc" date="1192953185" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ñòîèìîñòü âîñêðåøåíèÿ óìåðøåãî òàìàãî÷èêà<dfn>0 - âûêëþ÷èò âîñêðåøåíèå</dfn>]]></phrase>
+			<phrase name="setting_petz_resurrect_title" date="1192953185" username="alex Roosso" version="3.3.1"><![CDATA[Âîñêðåøåíèå]]></phrase>
+			<phrase name="setting_petz_slowexp_desc" date="1193117418" username="alex Roosso" version="3.3.1"><![CDATA[Âêëþ÷èòü îòñòàâàíèå ïîêàçàòåëåé îïûòà âî âðåìÿ áîÿ.]]></phrase>
+			<phrase name="setting_petz_slowexp_title" date="1193117418" username="alex Roosso" version="3.3.1"><![CDATA[Îïûò]]></phrase>
+			<phrase name="setting_petz_stealitemfine_desc" date="1193116904" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå âîðîâñêîé ïðîöåíò ïîòåðè ðåïóòàöèè, â ñëó÷àå åñëè êðàæà ïðåäìåòà íå óäàñòüñÿ.]]></phrase>
+			<phrase name="setting_petz_stealitemfine_title" date="1193116904" username="alex Roosso" version="3.3.1"><![CDATA[Øòðàô êðàæ]]></phrase>
+			<phrase name="setting_petz_stealitems_desc" date="1193103416" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå â ïðîöåíòàõ øàíñ óñïåøíîãî âîðîâñòâà âåùåé ó ïîëüçîâàòåëÿ. <dfn>Óêàæèòå 0 ÷òî áû èñêëþ÷èòü êðàæè</dfn>]]></phrase>
+			<phrase name="setting_petz_stealitems_title" date="1193103416" username="alex Roosso" version="3.3.1"><![CDATA[Êðàæà Âåùåé]]></phrase>
+			<phrase name="setting_petz_stealpetfine_desc" date="1193116923" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå âîðîâñêîé ïðîöåíò ïîòåðè ðåïóòàöèè, â ñëó÷àå åñëè êðàæà ïèòîìöà íå óäàñòüñÿ.]]></phrase>
+			<phrase name="setting_petz_stealpetfine_title" date="1193116923" username="alex Roosso" version="3.3.1"><![CDATA[Øòðàô êðàæ]]></phrase>
+			<phrase name="setting_petz_stealpets_desc" date="1193103460" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå â ïðîöåíòàõ øàíñ óñïåøíîãî âîðîâñòâà ïèòîìöà ó ïîëüçîâàòåëÿ.  <dfn>Óêàæèòå 0 ÷òî áû èñêëþ÷èòü êðàæè</dfn>]]></phrase>
+			<phrase name="setting_petz_stealpets_title" date="1193103460" username="alex Roosso" version="3.3.1"><![CDATA[Êðàæà ïèòîìöåâ]]></phrase>
+			<phrase name="setting_petz_stealrepfine_desc" date="1193116764" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ìèíèìàëüíóþ ðåïóòàöèþ ó÷àòíèêà ïðè êîòîðîé îí ñìîæåò ñîâåðøàòü êðàæè.]]></phrase>
+			<phrase name="setting_petz_stealrepfine_title" date="1193116764" username="alex Roosso" version="3.3.1"><![CDATA[Ðåïóòàöèÿ äëÿ êðàæ]]></phrase>
+			<phrase name="setting_petz_stock_desc" date="1193103611" username="alex Roosso" version="3.3.1"><![CDATA[Âêëþ÷èòå îïöèþ, äëÿ îãðàíè÷åíèÿ íà êîë-âî ïðîäàæ òîâàðà â çàäàíûé ïðîìåæóòîê âðåìåíè.]]></phrase>
+			<phrase name="setting_petz_stock_title" date="1193103611" username="alex Roosso" version="3.3.1"><![CDATA[Èñïîëüçîâàíèå ñêëàäà]]></phrase>
+			<phrase name="setting_petz_taxadopt_desc" date="1193104087" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ïðîöåíò íàëîãà íà ñäåëêè ïî ïèòîìöàì.]]></phrase>
+			<phrase name="setting_petz_taxadopt_title" date="1193104087" username="alex Roosso" version="3.3.1"><![CDATA[Íàëîãè]]></phrase>
 			<phrase name="setting_petz_taxauction_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[The percent of the winning auction bid that is taxed.]]></phrase>
 			<phrase name="setting_petz_taxauction_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Auction Tax]]></phrase>
-			<phrase name="setting_petz_taxbet_desc" date="1193116485" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð½Ð°Ð»Ð¾Ð³Ð¾Ð¾Ð±Ð»Ð°Ð¶ÐµÐ½Ð¸Ñ ÑÑ‚Ð°Ð²Ð¾Ðº Ð½Ð° Ð±Ð¾Ð¸.]]></phrase>
-			<phrase name="setting_petz_taxbet_title" date="1193116485" username="alex Roosso" version="3.3.1"><![CDATA[ÐÐ°Ð»Ð¾Ð³ Ð½Ð° Ð¡Ñ‚Ð°Ð²ÐºÐ¸]]></phrase>
-			<phrase name="setting_petz_taxdeath_desc" date="1193103866" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚ÐµÐ½Ð¸Ñ Ð¼Ð¾Ð³Ð¸Ð»Ð¾Ðº.]]></phrase>
-			<phrase name="setting_petz_taxdeath_title" date="1193103866" username="alex Roosso" version="3.3.1"><![CDATA[ÐœÐ¾Ð³Ð¸Ð»ÐºÐ¸]]></phrase>
-			<phrase name="setting_petz_taxsell_desc" date="1193107372" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ ÐºÐ¾Ð¼Ð¸ÑÑÐ¸Ð¸ Ð¾Ñ‚ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ñ‚Ð¾Ð²Ð°Ñ€Ð°, Ð¿Ñ€Ð¸ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰ÐµÐ½Ð¸Ð¸ ÐµÐ³Ð¾ Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½.]]></phrase>
-			<phrase name="setting_petz_taxsell_title" date="1193107372" username="alex Roosso" version="3.3.1"><![CDATA[Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²]]></phrase>
-			<phrase name="setting_petz_toplist_age_desc" date="1193103962" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¢ÐžÐŸ Ð›Ð¸ÑÑ‚ ÑÐ°Ð¼Ñ‹Ñ… Ð²Ð·Ñ€Ð¾ÑÐ»Ñ‹Ñ… Ð¿Ð¸Ñ‚Ð¾Ð¼Ñ†ÐµÐ²?]]></phrase>
-			<phrase name="setting_petz_toplist_age_title" date="1193103962" username="alex Roosso" version="3.3.1"><![CDATA[Ð¢ÐžÐŸ Ð›Ð¸ÑÑ‚ Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ñƒ]]></phrase>
-			<phrase name="setting_petz_toplist_losses_desc" date="1192953305" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÐ°Ð¼Ñ‹Ñ… Ð±Ð¾Ð»ÑŒÑˆÐ¸Ñ… Ð½ÐµÑƒÐ´Ð°Ñ‡Ð½Ð¸Ðº Ð² Ð¢ÐžÐŸ Ð›Ð¸ÑÑ‚Ðµ?]]></phrase>
-			<phrase name="setting_petz_toplist_losses_title" date="1192953305" username="alex Roosso" version="3.3.1"><![CDATA[Ð¢ÐžÐŸ Ð›ÑƒÐ·ÐµÑ€Ð¾Ð²]]></phrase>
-			<phrase name="setting_petz_toplist_stats_desc" date="1192953337" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ÑƒÑ€Ð¾Ð²Ð½Ñ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐµÐº Ð¸ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ Ð¿Ð¾ Ð½Ð¸Ð¼ Ð² Ð¢ÐžÐŸ Ð›Ð¸ÑÑ‚Ðµ Ð·Ð²ÐµÑ€Ð¸Ð½Ñ†Ð°.]]></phrase>
-			<phrase name="setting_petz_toplist_stats_title" date="1192953337" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¢ÐžÐŸ Ð›Ð˜Ð¡Ð¢Ð]]></phrase>
-			<phrase name="setting_petz_toplist_wins_desc" date="1192953275" username="alex Roosso" version="3.3.1"><![CDATA[ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð±ÐµÐ´Ð¸Ñ‚ÐµÐ»ÐµÐ¹ Ð±Ð¾ÐµÐ² Ð² Ð¢ÐžÐŸ Ð›Ð¸ÑÑ‚Ðµ?]]></phrase>
-			<phrase name="setting_petz_toplist_wins_title" date="1192953275" username="alex Roosso" version="3.3.1"><![CDATA[Ð¢ÐžÐŸ ÐŸÐ¾Ð±ÐµÐ´Ð¸Ñ‚ÐµÐ»ÐµÐ¹]]></phrase>
-			<phrase name="setting_petz_traincost_desc" date="1193107264" username="alex Roosso" version="3.3.1"><![CDATA[Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ñ†ÐµÐ½Ñƒ Ð·Ð° Ð¾Ð´Ð½Ñƒ Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²ÐºÑƒ Ð½Ð° Ð¿Ð¾Ð»Ð¸Ð³Ð¾Ð½Ðµ.]]></phrase>
-			<phrase name="setting_petz_traincost_title" date="1193107264" username="alex Roosso" version="3.3.1"><![CDATA[Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²Ð¾Ðº]]></phrase>
-			<phrase name="setting_petz_version_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐµÑ€ÑÐ¸Ñ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐµÐ¹]]></phrase>
-			<phrase name="setting_petz_version_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð’ÐµÑ€ÑÐ¸Ñ Ñ‚Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐµÐ¹]]></phrase>
-			<phrase name="settinggroup_petz" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Ð¢Ð°Ð¼Ð°Ð³Ð¾Ñ‡ÐºÐ¸ (Petz)]]></phrase>
+			<phrase name="setting_petz_taxbet_desc" date="1193116485" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ïðîöåíò íàëîãîîáëàæåíèÿ ñòàâîê íà áîè.]]></phrase>
+			<phrase name="setting_petz_taxbet_title" date="1193116485" username="alex Roosso" version="3.3.1"><![CDATA[Íàëîã íà Ñòàâêè]]></phrase>
+			<phrase name="setting_petz_taxdeath_desc" date="1193103866" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ñòîèìîñòü äëÿ ïðèîáðåòåíèÿ ìîãèëîê.]]></phrase>
+			<phrase name="setting_petz_taxdeath_title" date="1193103866" username="alex Roosso" version="3.3.1"><![CDATA[Ìîãèëêè]]></phrase>
+			<phrase name="setting_petz_taxsell_desc" date="1193107372" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå ïðîöåíò êîìèññèè îò ñòîèìîñòè òîâàðà, ïðè âîçâðàùåíèè åãî â ìàãàçèí.]]></phrase>
+			<phrase name="setting_petz_taxsell_title" date="1193107372" username="alex Roosso" version="3.3.1"><![CDATA[Âîçâðàò òîâàðîâ]]></phrase>
+			<phrase name="setting_petz_toplist_age_desc" date="1193103962" username="alex Roosso" version="3.3.1"><![CDATA[Âêëþ÷èòü ÒÎÏ Ëèñò ñàìûõ âçðîñëûõ ïèòîìöåâ?]]></phrase>
+			<phrase name="setting_petz_toplist_age_title" date="1193103962" username="alex Roosso" version="3.3.1"><![CDATA[ÒÎÏ Ëèñò ïî âîçðàñòó]]></phrase>
+			<phrase name="setting_petz_toplist_losses_desc" date="1192953305" username="alex Roosso" version="3.3.1"><![CDATA[Ïîêàçûâàòü ñàìûõ áîëüøèõ íåóäà÷íèê â ÒÎÏ Ëèñòå?]]></phrase>
+			<phrase name="setting_petz_toplist_losses_title" date="1192953305" username="alex Roosso" version="3.3.1"><![CDATA[ÒÎÏ Ëóçåðîâ]]></phrase>
+			<phrase name="setting_petz_toplist_stats_desc" date="1192953337" username="alex Roosso" version="3.3.1"><![CDATA[Âêëþ÷èòü îòîáðàæåíèå óðîâíÿ òàìàãî÷åê è ñòàòèñòèêó ïî íèì â ÒÎÏ Ëèñòå çâåðèíöà.]]></phrase>
+			<phrase name="setting_petz_toplist_stats_title" date="1192953337" username="alex Roosso" version="3.3.1"><![CDATA[Ñòàòèñòèêà ÒÎÏ ËÈÑÒÀ]]></phrase>
+			<phrase name="setting_petz_toplist_wins_desc" date="1192953275" username="alex Roosso" version="3.3.1"><![CDATA[Ïîêàçûâàòü ïîáåäèòåëåé áîåâ â ÒÎÏ Ëèñòå?]]></phrase>
+			<phrase name="setting_petz_toplist_wins_title" date="1192953275" username="alex Roosso" version="3.3.1"><![CDATA[ÒÎÏ Ïîáåäèòåëåé]]></phrase>
+			<phrase name="setting_petz_traincost_desc" date="1193107264" username="alex Roosso" version="3.3.1"><![CDATA[Óêàæèòå öåíó çà îäíó òðåíèðîâêó íà ïîëèãîíå.]]></phrase>
+			<phrase name="setting_petz_traincost_title" date="1193107264" username="alex Roosso" version="3.3.1"><![CDATA[Ñòîèìîñòü òðåíèðîâîê]]></phrase>
+			<phrase name="setting_petz_version_desc" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âåðñèÿ òàìàãî÷åé]]></phrase>
+			<phrase name="setting_petz_version_title" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Âåðñèÿ òàìàãî÷åé]]></phrase>
+			<phrase name="settinggroup_petz" date="1192942227" username="alex Roosso" version="3.3.1"><![CDATA[Òàìàãî÷êè (Petz)]]></phrase>
 		</phrasetype>
 	</phrases>
 	<options>

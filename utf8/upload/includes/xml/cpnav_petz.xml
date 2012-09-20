@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="petz">
+
+	<navgroup text="P3tz" hr="true" displayorder="20">
+
+		<navoption displayorder="1">
+			<text>Настройки</text>
+			<link>options.php?dogroup=petz</link>
+		</navoption>
+		
+		<navoption displayorder="10">
+			<text>Тамагочки</text>
+			<link>petzadmin.php?do=petz</link>
+		</navoption>
+		
+		<navoption displayorder="20">
+			<text>Рынок Шмота</text>
+			<link>petzadmin.php?do=items</link>
+		</navoption>
+		
+		<navoption displayorder="30">
+			<text>Ветеринарка</text>
+			<link>petzadmin.php?do=heal</link>
+		</navoption>
+		
+		<navoption displayorder="40">
+			<text>Сиротки</text>
+			<link>petzadmin.php?do=adopt</link>
+		</navoption>
+		
+		<navoption displayorder="50">
+			<text>Домики</text>
+			<link>petzadmin.php?do=care</link>
+		</navoption>
+		
+		<navoption displayorder="60">
+			<text>Кладбище</text>
+			<link>petzadmin.php?do=graves</link>
+		</navoption>
+		
+		<navoption displayorder="70">
+			<text>Гильдии</text>
+			<link>petzadmin.php?do=guilds</link>
+		</navoption>
+		
+		<navoption displayorder="80">
+			<text>Заклинания</text>
+			<link>petzadmin.php?do=spells</link>
+		</navoption>
+		
+		<navoption displayorder="90">
+			<text>Бои</text>
+			<link>petzadmin.php?do=arenas</link>
+		</navoption>
+		
+		<navoption displayorder="100">
+			<text>Аукционы</text>
+			<link>petzadmin.php?do=auctions</link>
+		</navoption>
+		
+		<navoption displayorder="200">
+			<text>Статистика</text>
+			<link>petzadmin.php?do=menu</link>
+		</navoption>
+		
+		<navoption displayorder="300">
+			<text>Логи</text>
+			<link>petzadmin.php?do=logs</link>
+		</navoption>
+		
+		<navoption displayorder="400">
+			<text>Пересчетать статистику</text>
+			<link>petzadmin.php?do=restock</link>
+		</navoption>
+		
+	</navgroup>
+
+</navgroups>
